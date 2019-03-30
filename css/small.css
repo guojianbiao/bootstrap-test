@@ -1,0 +1,165 @@
+
+/*屏幕缩小时顶部的下拉菜单点击展开的时候不对，而且不会把banner顶下去，
+添加.header+*{margin-top: 200px;}后上面又留了一大块白色区域，弄了很久不会弄，
+
+
+gallery区总感觉怪怪的，缩小时隐藏的色块字体挤出来，subscribe处背景图片不随页面滚动
+pc端的时候添加 background-attachment: fixed;感觉可以，但屏幕缩小时滚动就会出现一块空白，
+因代码太多，所以先上传作业 希望老师帮忙批改解答*/
+
+@media  (max-width: 768px) {
+	.navbar-toggle{
+		margin-right: 50%;
+		margin-top: 10px;
+		background-color: #f07818;
+		border:0;
+		color:#fff;
+	}
+	.header{
+		height: auto;
+	}
+	.header .head-logo{
+		margin-top: 8px;
+	}
+	.navbar-nav{
+		margin:0;
+		width: 100%;
+		z-index: 99;
+	}
+	.header .navbar-header{
+		height: 52px;
+	}
+	.header .navbar-nav > li {
+	  width: 100%;
+	  height: auto;
+	  margin:0;
+	  border:0;
+	}
+	.header .navbar-nav > li > a{
+		line-height:40px;
+	}
+	.full-padding{
+		padding: 0;
+	}
+	.header .clear-padding{
+		padding: 0 10px;
+	}
+	.header	.navbar-collapse{
+		padding: 0 15px;
+	}
+	.header  .tips li {
+		height: 52px;
+	}
+	.header .tips li a{
+		line-height: 52px;
+	}
+	.header .tips .tips-search .input-span{
+		top:52px;
+	}
+	.header .tips .form{
+		top:52px;
+		width: 180px;
+		height: 200px;
+	}
+	.header .tips .shop{
+		top:52px;
+	}
+	
+	/*banner*/
+	.banner{
+		height: 320px;
+		width: 100%;
+	}
+	.banner .pull-left{
+		margin-top: 60px;
+	}
+	.banner .pull-left .title span:nth-child(1){
+		font-size: 30px;
+	}
+	.banner .pull-left .title span:nth-child(2){
+		font-size: 30px;
+	}
+	.banner .pull-right{
+		margin-top: 60px;
+	}
+
+	/*gallery*/
+	.gallery .container{
+		margin-top: 20px;
+	}
+	.gallery .one-pic .left-img,
+	.gallery .one-pic .right-img{
+		height: 180px;
+	}
+
+	/*hide-item*/
+	.gallery .top-pic .right-img .hide-item-text,
+	.gallery .top-pic .left-img .hide-item-text{
+		height: .26rem;
+		margin:.12rem .1rem;
+		line-height:.26rem;
+	}
+	.gallery .top-pic .right-img .hide-button,
+	.gallery .top-pic .left-img .hide-button{
+		width: 80px;
+		height: .26rem;
+
+		line-height: .25rem;
+		font-size: 2px;
+		background-color: #000;
+	}
+	.gallery .top-pic .right-img .hide-button:hover,
+	.gallery .top-pic .left-img .hide-button:hover{
+		border-color: #f07918;
+		color:#f07918;
+	}
+	.gallery .top-pic .right-img:hover .hide-item,
+	.gallery .top-pic .left-img:hover .hide-item{
+		display: block;
+	}
+
+	/*subscribe*/
+	.subscribe{
+		height: 170px;
+	 	margin-top: 15px;
+	 	background-size: 200%;
+	}
+	.subscribe .content{
+		width: 80%;
+		margin:0 auto;
+	}
+	.subscribe .content .title{
+		font-size: 20px;
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+	.subscribe .content .input-group{
+		width: 240px;
+	}
+	.subscribe .content .form-control{
+		width: 200px;
+	}
+	.subscribe .content .input-group-addon{
+		width: 40px;
+	}
+
+	/*footer-bottom*/
+	.footer-bottom{
+		padding-bottom:30px;
+	}
+	.footer-bottom .title{
+		margin-top:40px;
+		margin-bottom:20px;
+	}
+}
+@media (min-width: 768px) and (max-width: 992px) {
+	.header .navbar-nav > li {
+	  width: 70px;
+	}
+	.header .collapse .dropdown-menu {
+	  width: 4rem;
+	}
+	.header .collapse .dropdown-menu li {
+	  width: .8rem;
+	}
+}
